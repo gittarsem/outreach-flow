@@ -1,0 +1,18 @@
+appId: com.outreachflow.desktop
+productName: OutreachFlow
+directories:
+  output: release
+files:
+  - dist/**
+  - package.json
+mac:
+  category: public.app-category.productivity
+  target: [dmg]
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  extendInfo:
+    NSDocumentsFolderUsageDescription: OutreachFlow stores resumes and workbook data locally.
+win:
+  target: [nsis]
+linux:
+  target: [AppImage]
